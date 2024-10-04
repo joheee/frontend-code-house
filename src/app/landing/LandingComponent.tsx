@@ -3,7 +3,7 @@ import LandingDesktop from "./LandingDesktop";
 
 export default function LandingComponent() {
   return (
-    <PaddingComponent>
+    <PaddingComponent className="select-none">
       <LandingDesktop />
     </PaddingComponent>
   );

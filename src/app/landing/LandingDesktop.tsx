@@ -2,40 +2,46 @@ import Image from "next/image";
 
 export default function LandingDesktop() {
   return (
-    <div className="">
+    <div className="relative h-screen overflow-hidden w-full">
       <Image
-        className="z-0"
+        className="z-0 absolute"
         src="/landing_background.png"
         alt="landing page background for Code House"
         layout="fill"
+        objectFit="cover"
         quality={100}
         priority
       />
-      <div className="z-10 flex flex-col items-center justify-center h-screen">
+
+      <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <div className="flex gap-5 items-center">
-          <div className="font-bold text-[65px]">WE ARE</div>
+          <div className="font-bold text-[90px] tracking-widest">WE ARE</div>
           <Image
             className="w-fit h-fit z-0"
             src="/landing_first_content.png"
-            alt="landing page background for Code House"
+            alt="landing first content for Code House"
             width={100}
             height={100}
             quality={100}
             priority
           />
-          <div className="font-bold text-[65px]">SOFTWARE</div>
+          <div className="font-bold text-[90px] tracking-widest">SOFTWARE</div>
         </div>
         <div className="flex gap-5 items-center">
-          <div className="font-bold text-[65px]">HOUSE</div>
+          <div className="font-extralight text-[65px]">HOUSE</div>
           <Image
             className="w-fit h-fit z-0"
             src="/landing_second_content.png"
-            alt="landing page background for Code House"
+            alt="landing second content for Code House"
             width={100}
             height={100}
             quality={100}
             priority
           />
+          <div className="tracking-widest font-extralight">
+            <div className="">Empowering businesses</div>
+            <div className="">through Software</div>
+          </div>
         </div>
       </div>
     </div>
