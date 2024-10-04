@@ -1,6 +1,8 @@
-export default function NavigationDesktop() {
+import { NavigationInterface } from "./interface";
+
+export default function NavigationDesktop(navigation: NavigationInterface) {
   return (
-    <div className="flex justify-between items-center py-5 px-10 text-md">
+    <div className={`flex justify-between items-center py-5 px-10 text-md ${navigation.className}`}>
       <div className="font-bold">Code House</div>
       <div className="bg-white shadow-md flex p-2 gap-2 rounded-sm">
         <div className="cursor-pointer hover:bg-accent px-4 py-[1] rounded-sm text-font_dark">
@@ -16,7 +18,7 @@ export default function NavigationDesktop() {
           Contact
         </div>
       </div>
-      <div className="hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark">
+      <div className="shadow-md hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark">
         Get in touch
       </div>
     </div>
