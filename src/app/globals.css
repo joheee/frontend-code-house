@@ -3,14 +3,22 @@
 @tailwind utilities;
 
 :root {
+  /* already in paired with dark theme */
   --background: #ffffff;
   --foreground: #171717;
+  --white: #f6f6f6;
+  
+  /* doesnt have paired dark theme */
+  --font_dark: #171717;
+  --accent: #fad007;
+  --accent_hover: #e0b000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --white: #ffffff;
   }
 }
 
