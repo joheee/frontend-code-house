@@ -1,4 +1,4 @@
-import NavigationDesktop from "@/navigation/NavigationDesktop";
+import NavigationDesktop from "@/app/navigation/NavigationDesktop";
 
 export default function Home() {
   return (
