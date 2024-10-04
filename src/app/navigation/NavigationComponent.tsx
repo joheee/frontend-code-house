@@ -1,4 +1,3 @@
-import React from "react";
 import NavigationDesktop from "./NavigationDesktop";
 import NavigationMobile from "./NavigationMobile";
 
