@@ -43,6 +43,14 @@ export default function LandingDesktop() {
             <div className="">through Software</div>
           </div>
         </div>
+        <div className="mt-10 text-lg flex flex-col items-center">
+          <div className="tracking-widest">
+            We empower your business to thrive in the digital age
+          </div>
+          <div className="shadow-md hover:bg-accent_hover mt-5 hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark">
+            Contact us
+          </div>
+        </div>
       </div>
     </div>
   );
