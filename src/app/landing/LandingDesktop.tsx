@@ -41,8 +41,8 @@ export default function LandingDesktop(landing: LandingInterface) {
             quality={100}
             priority
           />
-          <div className="tracking-widest font-light">
-            <div className="">Empowering businesses</div>
+          <div className="tracking-widest">
+            <div className="">Enhancing businesses</div>
             <div className="">through Software</div>
           </div>
         </div>
