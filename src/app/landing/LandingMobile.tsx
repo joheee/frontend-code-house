@@ -17,7 +17,7 @@ export default function LandingMobile(landing: LandingInterface) {
         priority
       />
 
-      <PaddingComponent className="relative z-10 flex flex-col items-center justify-center h-full">
+      <PaddingComponent className="relative z-10 flex flex-col items-center justify-center h-full from-background">
         <div className="flex gap-5 items-center">
           <div className="font-bold tracking-widest text-clamp-xl">WE ARE</div>
           <Image

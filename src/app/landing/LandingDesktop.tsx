@@ -16,7 +16,7 @@ export default function LandingDesktop(landing: LandingInterface) {
         priority
       />
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-gradient-to-t from-background">
         <div className="flex gap-5 items-center">
           <div className="font-bold text-[65px] tracking-widest">WE ARE</div>
           <Image
