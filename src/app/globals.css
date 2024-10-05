@@ -7,7 +7,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --white: #f6f6f6;
-  
+
   /* doesnt have paired dark theme */
   --font_dark: #171717;
   --accent: #fad007;
@@ -32,4 +32,24 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent_hover);
 }
