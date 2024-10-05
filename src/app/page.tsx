@@ -4,7 +4,7 @@ import NavigationComponent from "./navigation/NavigationComponent";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden relative">
       <NavigationComponent />
       <LandingComponent />
       <FooterComponent />
