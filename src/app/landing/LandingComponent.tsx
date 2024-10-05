@@ -1,10 +1,11 @@
-import PaddingComponent from "../padding/PaddingComponent";
 import LandingDesktop from "./LandingDesktop";
+import LandingMobile from "./LandingMobile";
 
 export default function LandingComponent() {
   return (
-    <PaddingComponent className="select-none">
-      <LandingDesktop />
-    </PaddingComponent>
+    <div>
+      <LandingDesktop className="hidden laptop:block" />
+      <LandingMobile className="block laptop:hidden" />
+    </div>
   );
 }

@@ -7,19 +7,22 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens:{
-      'tablet': '740px',
-      'laptop': '1024px',
-      'desktop': '1280px',
+    screens: {
+      tablet: "740px",
+      laptop: "940px",
+      desktop: "1280px",
     },
     extend: {
+      fontSize: {
+        "clamp-xl": "clamp(30px, 9vw, 65px)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: "var(--accent)",
         white: "var(--white)",
         accent_hover: "var(--accent_hover)",
-        font_dark: "var(--font_dark)"
+        font_dark: "var(--font_dark)",
       },
     },
   },
