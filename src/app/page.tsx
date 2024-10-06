@@ -2,6 +2,7 @@ import AboutComponent from "./about/AboutComponent";
 import FooterComponent from "./footer/FooterComponent";
 import LandingComponent from "./landing/LandingComponent";
 import NavigationComponent from "./navigation/NavigationComponent";
+import WorkComponent from "./work/WorkComponent";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <NavigationComponent />
       <LandingComponent />
       <AboutComponent />
+      <WorkComponent />
       <FooterComponent />
     </div>
   );
