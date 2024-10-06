@@ -4,7 +4,7 @@ import WorkMobile from "./WorkMobile";
 
 export default function WorkComponent() {
   return (
-    <PaddingComponent className="py-10">
+    <PaddingComponent className="py-20">
       <WorkDesktop className="hidden tablet:grid" />
       <WorkMobile className="block tablet:hidden" />
     </PaddingComponent>
