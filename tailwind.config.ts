@@ -16,6 +16,9 @@ const config: Config = {
       fontSize: {
         "clamp-xl": "clamp(30px, 9vw, 65px)",
       },
+      height: {
+        "clamp-about-image": "clamp(500px, 10vw, 800px)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
