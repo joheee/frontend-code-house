@@ -4,7 +4,7 @@ import ServiceMobile from "./ServiceMobile";
 
 export default function ServiceComponent() {
   return (
-    <PaddingComponent className="py-10">
+    <PaddingComponent className="py-20">
       <ServiceDesktop className="hidden laptop:grid" />
       <ServiceMobile className="block laptop:hidden" />
     </PaddingComponent>

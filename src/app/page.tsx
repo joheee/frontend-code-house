@@ -1,4 +1,5 @@
 import AboutComponent from "./about/AboutComponent";
+import ContactComponent from "./contact/ContactComponent";
 import FooterComponent from "./footer/FooterComponent";
 import KeyFactComponent from "./keyFact/KeyFactComponent";
 import LandingComponent from "./landing/LandingComponent";
@@ -14,7 +15,8 @@ export default function Home() {
       <AboutComponent />
       <KeyFactComponent />
       <WorkComponent />
-      <ServiceComponent/>
+      <ServiceComponent />
+      <ContactComponent />
       <FooterComponent />
     </div>
   );

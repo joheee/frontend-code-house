@@ -8,7 +8,7 @@ import AboutMobile from "./AboutMobile";
 export default function AboutComponent() {
   return (
     <div>
-      <PaddingComponent className="py-10">
+      <PaddingComponent className="py-20">
         <AboutDesktop className="hidden tablet:grid" />
         <AboutMobile className="block tablet:hidden" />
       </PaddingComponent>
