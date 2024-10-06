@@ -3,6 +3,7 @@ import FooterComponent from "./footer/FooterComponent";
 import KeyFactComponent from "./keyFact/KeyFactComponent";
 import LandingComponent from "./landing/LandingComponent";
 import NavigationComponent from "./navigation/NavigationComponent";
+import ServiceComponent from "./services/ServiceComponent";
 import WorkComponent from "./work/WorkComponent";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutComponent />
       <KeyFactComponent />
       <WorkComponent />
+      <ServiceComponent/>
       <FooterComponent />
     </div>
   );

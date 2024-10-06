@@ -4,10 +4,10 @@ import WorkCard from "./WorkCard";
 export default function WorkMobile(work: WorkInterface) {
   return (
     <div className={`${work.className}`}>
-      <div className="text-[50px] font-extrabold text-center">
+      <div className="text-clamp-about font-extrabold text-center">
         SELECTED WORK
       </div>
-      <div className="mt-10 gap-20 grid grid-cols-1">
+      <div className="mt-5 gap-20 grid grid-cols-1">
         <WorkCard
           src="/work_project_1.png"
           alt=""

@@ -7,7 +7,7 @@ export default function WorkDesktop(work: WorkInterface) {
       <div className="text-[50px] font-extrabold text-center">
         SELECTED WORK
       </div>
-      <div className="mt-10 gap-10 grid grid-cols-2">
+      <div className="mt-5 gap-10 grid grid-cols-2">
         <WorkCard
           src="/work_project_1.png"
           alt=""
