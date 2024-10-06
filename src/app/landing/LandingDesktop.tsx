@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { LandingInterface } from "./interface";
+import Link from "next/link";
+import { CONTACT_ID } from "../config/variable";
+import { handleSmoothScroll } from "../navigation/smoothScrool";
 
 export default function LandingDesktop(landing: LandingInterface) {
   return (
@@ -54,9 +59,13 @@ export default function LandingDesktop(landing: LandingInterface) {
           <div className="tracking-widest">
             We empower your business to thrive in the digital age
           </div>
-          <div className="shadow-md hover:bg-accent_hover mt-5 hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark">
-            Contact us
-          </div>
+          <Link
+            href={`#${CONTACT_ID}`}
+            onClick={(e) => handleSmoothScroll(e, CONTACT_ID)}
+            className="shadow-md hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>

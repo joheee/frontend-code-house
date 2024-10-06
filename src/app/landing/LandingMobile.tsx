@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
 import { LandingInterface } from "./interface";
 import PaddingComponent from "../padding/PaddingComponent";
+import Link from "next/link";
+import { CONTACT_ID } from "../config/variable";
+import { handleSmoothScroll } from "../navigation/smoothScrool";
 
 export default function LandingMobile(landing: LandingInterface) {
   return (
@@ -19,18 +23,22 @@ export default function LandingMobile(landing: LandingInterface) {
 
       <PaddingComponent className="relative z-10 flex flex-col items-center justify-center h-full from-background">
         <div className="flex gap-5 items-center">
-          <div className="font-extrabold tracking-widest text-clamp-xl">WE ARE</div>
+          <div className="font-extrabold tracking-widest text-clamp-xl">
+            WE ARE
+          </div>
           <Image
             className="z-0"
             src="/landing_first_content.png"
             alt="landing first content for Code House"
-            width={80} 
-            height={80} 
+            width={80}
+            height={80}
             quality={100}
             priority
           />
         </div>
-        <div className="font-extrabold text-clamp-xl tracking-widest">SOFTWARE</div>
+        <div className="font-extrabold text-clamp-xl tracking-widest">
+          SOFTWARE
+        </div>
         <div className="flex flex-col justify-center gap-5 items-center">
           <div className="font-extralight text-clamp-xl">HOUSE</div>
           <Image
@@ -51,9 +59,13 @@ export default function LandingMobile(landing: LandingInterface) {
           <div className="tracking-widest">
             We empower your business to thrive in the digital age
           </div>
-          <div className="shadow-md hover:bg-accent_hover mt-5 hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark">
-            Contact us
-          </div>
+          <Link
+            href={`#${CONTACT_ID}`}
+            onClick={(e) => handleSmoothScroll(e, CONTACT_ID)}
+            className="shadow-md mt-5 hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark"
+          >
+            Contact Us
+          </Link>
         </div>
       </PaddingComponent>
     </div>

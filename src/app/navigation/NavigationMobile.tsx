@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { NavigationInterface } from "./interface";
+import NavigationContent from "./NavigationContent";
 
-export default function NavigationMobile(navigation:NavigationInterface) {
+export default function NavigationMobile(navigation: NavigationInterface) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,7 +11,9 @@ export default function NavigationMobile(navigation:NavigationInterface) {
   };
 
   return (
-    <div className={`flex justify-between items-center py-5 px-10 text-md ${navigation.className}`}>
+    <div
+      className={`flex justify-between items-center py-5 px-10 text-md ${navigation.className}`}
+    >
       <div className="font-bold">Code House</div>
 
       <div className="relative">
@@ -27,18 +30,7 @@ export default function NavigationMobile(navigation:NavigationInterface) {
           }`}
           style={{ overflow: "hidden" }}
         >
-          <div className="cursor-pointer hover:bg-accent px-4 py-1 rounded-sm text-font_dark">
-            Home
-          </div>
-          <div className="cursor-pointer hover:bg-accent px-4 py-1 rounded-sm text-font_dark">
-            About
-          </div>
-          <div className="cursor-pointer hover:bg-accent px-4 py-1 rounded-sm text-font_dark">
-            Works
-          </div>
-          <div className="cursor-pointer hover:bg-accent px-4 py-1 rounded-sm text-font_dark">
-            Contact
-          </div>
+          <NavigationContent />
         </div>
       </div>
     </div>
