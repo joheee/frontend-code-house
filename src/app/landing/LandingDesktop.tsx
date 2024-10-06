@@ -62,7 +62,7 @@ export default function LandingDesktop(landing: LandingInterface) {
           <Link
             href={`#${CONTACT_ID}`}
             onClick={(e) => handleSmoothScroll(e, CONTACT_ID)}
-            className="shadow-md hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark"
+            className="shadow-md mt-5 hover:bg-accent_hover hover:cursor-pointer bg-accent px-4 py-1 rounded-sm text-font_dark"
           >
             Contact Us
           </Link>
