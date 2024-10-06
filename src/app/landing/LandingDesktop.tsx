@@ -18,7 +18,9 @@ export default function LandingDesktop(landing: LandingInterface) {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-gradient-to-t from-background">
         <div className="flex gap-5 items-center">
-          <div className="font-bold text-[65px] tracking-widest">WE ARE</div>
+          <div className="font-extrabold text-[65px] tracking-widest">
+            WE ARE
+          </div>
           <Image
             className="w-fit h-fit z-0"
             src="/landing_first_content.png"
@@ -28,7 +30,9 @@ export default function LandingDesktop(landing: LandingInterface) {
             quality={100}
             priority
           />
-          <div className="font-bold text-[65px] tracking-widest">SOFTWARE</div>
+          <div className="font-extrabold text-[65px] tracking-widest">
+            SOFTWARE
+          </div>
         </div>
         <div className="flex gap-5 items-center">
           <div className="font-extralight text-[65px]">HOUSE</div>
