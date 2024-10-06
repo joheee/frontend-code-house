@@ -15,6 +15,10 @@ const config: Config = {
     extend: {
       fontSize: {
         "clamp-xl": "clamp(30px, 9vw, 65px)",
+        "clamp-about": "clamp(30px, 9vw, 50px)",
+        "clamp-about-key-fact-mobile": "clamp(30px, 6vw, 50px)",
+        "clamp-key-fact-item": "clamp(20px, 6vw, 90px)",
+        "clamp-key-fact-item-text": "clamp(12px, 4vw, 18px)",
       },
       height: {
         "clamp-about-image": "clamp(500px, 10vw, 800px)",
