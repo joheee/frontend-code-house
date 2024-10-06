@@ -1,5 +1,6 @@
 import { FiInstagram } from "react-icons/fi";
 import { FooterInterface } from "./interface";
+import FooterContent from "./FooterContent";
 
 export default function FooterDesktop(footer: FooterInterface) {
   return (
@@ -19,10 +20,7 @@ export default function FooterDesktop(footer: FooterInterface) {
           </a>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="">About us</div>
-          <div className="">Works</div>
-          <div className="">Testimonials</div>
-          <div className="">Contact us</div>
+          <FooterContent />
         </div>
       </div>
       <div className="text-center mt-10">copyright © 2024 Code House</div>
