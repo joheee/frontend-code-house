@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { WorkCardInterface } from "./interface";
+import { HoverEffect } from "../config/HoverEffect";
 
 export default function WorkCard(prop: WorkCardInterface) {
   return (
-    <div className="hover:scale-95 transition-all duration-300 ease-in-out">
+    <div className={HoverEffect}>
       <Image
         alt={prop.alt}
         src={prop.src}
