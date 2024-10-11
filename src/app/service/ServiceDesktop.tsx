@@ -1,5 +1,5 @@
 import { ServiceInterface } from "./interface";
-import ServiceCard from "./ServiceCard";
+import ServiceContent from "./ServiceContent";
 
 export default function ServiceDesktop(prop: ServiceInterface) {
   return (
@@ -13,24 +13,7 @@ export default function ServiceDesktop(prop: ServiceInterface) {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-10">
-        <ServiceCard
-          title="Consulting"
-          description="
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere illum sunt quidem eaque explicabo molestiae, a sint, in ipsam excepturi saepe nostrum possimus, maxime molestias veniam commodi aperiam modi. Eum!
-        "
-        />
-        <ServiceCard
-          title="Consulting"
-          description="
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere illum sunt quidem eaque explicabo molestiae, a sint, in ipsam excepturi saepe nostrum possimus, maxime molestias veniam commodi aperiam modi. Eum!
-        "
-        />
-        <ServiceCard
-          title="Consulting"
-          description="
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere illum sunt quidem eaque explicabo molestiae, a sint, in ipsam excepturi saepe nostrum possimus, maxime molestias veniam commodi aperiam modi. Eum!
-        "
-        />
+        <ServiceContent />
       </div>
     </div>
   );

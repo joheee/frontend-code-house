@@ -20,7 +20,7 @@ const config: Config = {
         "clamp-about-key-fact-mobile": "clamp(30px, 6vw, 50px)",
         "clamp-key-fact-item": "clamp(20px, 6vw, 90px)",
         "clamp-key-fact-item-text": "clamp(12px, 4vw, 18px)",
-        "clamp-service-card-title": "clamp(20px, 2vw, 30px)",
+        "clamp-service-card-title": "clamp(20px, 2vw, 40px)",
       },
       height: {
         "clamp-about-image": "clamp(500px, 10vw, 800px)",
