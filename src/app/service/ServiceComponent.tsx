@@ -1,3 +1,4 @@
+"use client"
 import { SERVICE_ID } from "../config/variable";
 import PaddingComponent from "../padding/PaddingComponent";
 import ServiceDesktop from "./ServiceDesktop";
