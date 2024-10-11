@@ -3,7 +3,7 @@ import { WorkCardInterface } from "./interface";
 
 export default function WorkCard(prop: WorkCardInterface) {
   return (
-    <div className="">
+    <div className="hover:scale-95 transition-all duration-300 ease-in-out">
       <Image
         alt={prop.alt}
         src={prop.src}

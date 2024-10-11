@@ -6,9 +6,7 @@ export default function ServiceCard(prop: ServiceCardInterface) {
       <div className="text-clamp-service-card-title font-bold mb-2 text-gray-800">
         {prop.title}
       </div>
-      <div className="text-xl text-gray-600">
-        {prop.description}
-      </div>
+      <div className="text-xl text-gray-600">{prop.description}</div>
     </div>
   );
 }
