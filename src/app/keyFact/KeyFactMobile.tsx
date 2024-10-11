@@ -1,9 +1,31 @@
+import { useRef } from "react";
 import { AboutInterface } from "../about/interface";
 import KeyFactItem from "./KeyFactItem";
+import { motion, useInView } from "framer-motion";
 
 export default function KeyFactMobile(about: AboutInterface) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
   return (
-    <div className={`${about.className} grid gap-5`}>
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={fadeInUp}
+      className={`${about.className} grid gap-5`}
+    >
       <div className="w-fit">
         <div className="font-extrabold text-clamp-about-key-fact-mobile">
           GET AQUANTED WITH
@@ -17,6 +39,6 @@ export default function KeyFactMobile(about: AboutInterface) {
         <KeyFactItem value="120" unit="+" text="Project Completed" />
         <KeyFactItem value="97" unit="%" text="Clients Satisfaction" />
       </div>
-    </div>
+    </motion.div>
   );
 }

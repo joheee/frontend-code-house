@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function AboutDesktop(about: AboutInterface) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: .3 });
+  const isInView = useInView(ref, { once: true, amount: .3 });
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },

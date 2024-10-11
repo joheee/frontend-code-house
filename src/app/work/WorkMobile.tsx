@@ -1,9 +1,31 @@
+import { useRef } from "react";
 import { WorkInterface } from "./interface";
 import WorkCard from "./WorkCard";
+import { motion, useInView } from "framer-motion";
 
 export default function WorkMobile(work: WorkInterface) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+      },
+    },
+  };
   return (
-    <div className={`${work.className}`}>
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={fadeInUp}
+      className={`${work.className}`}
+    >
       <div className="text-clamp-about font-extrabold text-center">
         SELECTED WORK
       </div>
@@ -21,6 +43,6 @@ export default function WorkMobile(work: WorkInterface) {
           subtitle="The Jogjakarta Tourism website offers detailed listings of local attractions, accommodations, and dining options, complete with photos and reviews"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

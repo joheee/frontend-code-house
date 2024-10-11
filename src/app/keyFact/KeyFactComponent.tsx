@@ -1,3 +1,4 @@
+"use client"
 import PaddingComponent from "../padding/PaddingComponent";
 import KeyFactDesktop from "./KeyFactDesktop";
 import KeyFactMobile from "./KeyFactMobile";

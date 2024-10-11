@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 export default function AboutMobile(about: AboutInterface) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },

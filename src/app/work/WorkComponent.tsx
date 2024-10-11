@@ -1,3 +1,4 @@
+"use client"
 import { WORKS_ID } from "../config/variable";
 import PaddingComponent from "../padding/PaddingComponent";
 import WorkDesktop from "./WorkDesktop";
