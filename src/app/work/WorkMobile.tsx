@@ -42,6 +42,12 @@ export default function WorkMobile(work: WorkInterface) {
           title="VISIT JOGJA"
           subtitle="The Jogjakarta Tourism website offers detailed listings of local attractions, accommodations, and dining options, complete with photos and reviews"
         />
+        <WorkCard
+          src="/work_project_3.png"
+          alt=""
+          title="VISIT JOGJA"
+          subtitle="The Jogjakarta Tourism website offers detailed listings of local attractions, accommodations, and dining options, complete with photos and reviews"
+        />
       </div>
     </motion.div>
   );

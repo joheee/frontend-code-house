@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 export default function WorkDesktop(work: WorkInterface) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1  });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
@@ -20,11 +20,12 @@ export default function WorkDesktop(work: WorkInterface) {
   };
   return (
     <motion.div
-    ref={ref}
-    initial="hidden"
-    animate={isInView ? "visible" : "hidden"}
-    variants={fadeInUp}
-    className={`${work.className}`}>
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={fadeInUp}
+      className={`${work.className}`}
+    >
       <div className="text-[50px] font-extrabold text-center">
         SELECTED WORK
       </div>
@@ -40,6 +41,12 @@ export default function WorkDesktop(work: WorkInterface) {
           alt=""
           title="VISIT JOGJA"
           subtitle="The Jogjakarta Tourism website offers detailed listings of local attractions, accommodations, and dining options, complete with photos and reviews"
+        />
+        <WorkCard
+          src="/work_project_3.png"
+          alt=""
+          title="GENIE EYD"
+          subtitle="An engaging educational platform designed to make learning fun and interactive for kids"
         />
       </div>
     </motion.div>
