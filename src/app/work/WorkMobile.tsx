@@ -48,6 +48,12 @@ export default function WorkMobile(work: WorkInterface) {
           title="VISIT JOGJA"
           subtitle="The Jogjakarta Tourism website offers detailed listings of local attractions, accommodations, and dining options, complete with photos and reviews"
         />
+        <WorkCard
+          src="/work_project_4.png"
+          alt=""
+          title="CHESS"
+          subtitle="The cloned version for chess game website named chess.com"
+        />
       </div>
     </motion.div>
   );

@@ -48,6 +48,12 @@ export default function WorkDesktop(work: WorkInterface) {
           title="GENIE EYD"
           subtitle="An engaging educational platform designed to make learning fun and interactive for kids"
         />
+        <WorkCard
+          src="/work_project_4.png"
+          alt=""
+          title="CHESS"
+          subtitle="The cloned version for chess game website named chess.com"
+        />
       </div>
     </motion.div>
   );
